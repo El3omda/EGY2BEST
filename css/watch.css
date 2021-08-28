@@ -1,0 +1,332 @@
+/* Start Main */
+
+.tv-container {
+  width: 95%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 600px;
+  background-color: #333;
+  border-radius: 50px;
+
+}
+
+/* End Main */
+
+/* Start Antena */
+
+.antena-right {
+  width: 5px;
+  height: 200px;
+  background-color: #000;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(30deg) translateX(-50%);
+  position: absolute;
+  top: -150px;
+  right: 40%;
+  z-index: 1;
+
+}
+.antena-left {
+  width: 5px;
+  height: 200px;
+  background-color: #000;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: -150px;
+  right: 60%;
+  z-index: 1;
+}
+
+/* End Antena */
+
+/* Start Tv Borders */
+
+.outlayer {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  border-radius: 50px;
+
+}
+
+.tv-controls {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  right: 50px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.tv-controls:after {
+  content: "Off";
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  left: -40px;
+  top: 20px;
+}
+.tv-controls:before {
+  content: "On";
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  right: -40px;
+  top: 20px;
+}
+.tv-controls .switch {
+  background-color: #333;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -25%;
+  transform: translate(-50%,-50%);
+  transition: all .8s;
+  cursor: pointer;
+
+}
+
+.tv-controls .switch .pointer {
+  width: 5px;
+  height: 25px;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(90deg) translateY(-50%);
+  top: 30%;
+  left: -5px;
+  cursor: pointer;
+}
+
+.tv-controls1 {
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+}
+.tv-controls1 .name {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  top: -45px;
+  right: 7px;
+}
+.tv-controls .name {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  top: -45px;
+  right: 17px;
+}
+.tv-controls1 .switch {
+  background-color: #333;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -25%;
+  transition: all .8s;
+  cursor: pointer;
+  transform: translate(-50%,-50%);
+
+}
+
+.tv-controls1 .switch .pointer {
+  width: 5px;
+  height: 25px;
+  position: absolute;
+  background-color: #fff;
+  transform: rotate(90deg) translateY(-50%);
+  top: 30%;
+  left: -5px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.tv-controls1:after {
+  content: "Low";
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  left: -40px;
+  top: 20px;
+}
+.tv-controls1:before {
+  content: "High";
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  right: -40px;
+  top: 20px;
+}
+.on {
+  transform:rotate(180deg) translate(49%, 50%) !important;
+}
+/* End Tv Borders */
+
+/* Start Tv Stand */
+
+.tv-stand {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.tv-stand .tv-right {
+  width: 5px;
+  height: 50px;
+  background-color: #333;
+  border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(30deg);
+  position: absolute;
+  top: -20px;
+  left: 200px;
+}
+.tv-stand .tv-left {
+  width: 5px;
+  height: 50px;
+  background-color: #333;
+  border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: -20px;
+  right: 200px;
+}
+/* End Tv Stand */
+/* Start Media Queries */
+
+@media (max-width:2000px) {
+  .tv-controls {
+    right: 110px;
+  }
+  .tv-controls1 {
+    right: 110px;
+  }
+}
+@media (max-width:1500px) {
+  .tv-controls {
+    right: 85px;
+  }
+  .tv-controls1 {
+    right: 85px;
+  }
+}
+@media (max-width:1295px) {
+  .tv-controls {
+    right: 145px;
+  }
+  .tv-controls1 {
+    right: 145px;
+  }
+  .outlayer {
+    width: 70%;
+  }
+}
+@media (max-width:1155px) {
+  .tv-controls {
+    right: 105px;
+  }
+  .tv-controls1 {
+    right: 105px;
+  }
+
+}
+@media (max-width:955px) {
+  .tv-controls {
+    right: 80px;
+  }
+  .tv-controls1 {
+    right: 80px;
+  }
+
+}
+@media (max-width:860px) {
+  .tv-controls {
+    right: 80px;
+    top: 50px;
+  }
+  .tv-controls1 {
+    top: 50px;
+    left: 74px;
+  }
+  .tv-container {
+    height: 700px;
+  }
+  .outlayer {
+    top: 57%;
+    width: 90%;
+    height: 73%;
+  }
+}
+@media (max-width:720px) {
+  .antena-right {
+    right: 30%;
+  }
+  .antena-left {
+    right: 69%;
+  }
+}
+@media (max-width:630px) {
+  .outlayer {
+    left: 28px;
+  }
+}
+@media (max-width:450px) {
+  .outlayer {
+    left: 20px;
+  }
+  .tv-stand .tv-left {
+    right: 133px;
+  }
+  .tv-stand .tv-right {
+    left: 128px;
+  }
+}
+@media (max-width:410px) {
+  .tv-controls:after {
+    left: -29px;
+    font-size: 16px;
+  }
+  .tv-controls:before {
+    right: -29px;
+    font-size: 16px;
+  }
+  .tv-controls {
+    right: 50px;
+    font-size: 16px;
+  }
+  .tv-controls1 {
+    left: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:330px) {
+
+}
+
+/* End Media Queries */

@@ -1,0 +1,130 @@
+body {
+  margin-bottom: 80px;
+  direction: rtl;
+  background-color:#c13584;
+}
+* {
+  box-sizing: border-box;
+}
+.content-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 50%;
+  padding: 40px 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.content-container .title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.content-container .navigator {
+  width: 70%;
+  margin: 20px auto;
+}
+.content-container .changable-box {
+  width: 70%;
+  margin: 10px auto;
+}
+.content-container ul {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  border-radius: 5px;
+
+}
+.content-container ul li {
+  float: right;
+  width: calc((100% / 2) - 2px);
+}
+.content-container ul li:last-of-type {
+  margin-right: 4px;
+}
+.content-container ul li a {
+  color: #fff;
+  display: block;
+  padding: 10px 0;
+  background-color: #405de6;
+  border: 1px solid #405de6;
+  border-radius: 5px;
+  transition: all .4s;
+  cursor: pointer;
+}
+.content-container ul li a:hover,.content-container ul li a.active {
+  background-color: #fff;
+  color: #405de6;
+}
+.content-container .input-field {
+  margin: 20px 0;
+}
+.content-container input,select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(156, 156, 156);
+  outline: none;
+  padding-right: 5px;
+}
+.content-container input[type="submit"] {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  background-color: #405de6;
+  color: #fff;
+  border: 1px solid #405de6;
+  transition: all .4s;
+  height: 50px;
+}
+.content-container input[type="submit"]:hover {
+  background-color: #fff;
+  color: #405de6;
+}
+.last {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #333;
+}
+.sign-up {
+  display: none;
+}
+.right {
+  display: block;
+  text-align: right;
+  margin-top: -15px;
+  margin-bottom: 5px;
+}
+@media (max-width:700px) {
+  .content-container {
+    width: 60%;
+  }
+}
+@media (max-width:700px) {
+  .content-container {
+    width: 70%;
+  }
+  .last a {
+    display: block;
+  }
+}
+@media (max-width:450px) {
+  .content-container {
+    width: 90%;
+  }
+  .content-container .navigator {
+    width: 90%;
+  }
+  .content-container .changable-box {
+    width: 90%;
+  }
+  .last a {
+    display: inline;
+  }
+}
+@media (max-width:290px) {
+  .last a {
+    display: block;
+  }
+}
